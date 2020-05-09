@@ -25,7 +25,7 @@ import PackageDescription
 let package = Package(
     name: "OAuthSwift",
     products: [
-        .library(name: "OAuthSwift", targets: ["OAuthSwift"]),
+        .library(name: "OAuthSwift", type: .dynamic, targets: ["OAuthSwift"]),
     ],
     dependencies: [
         .package(url: "https://github.com/phimage/Erik.git", .upToNextMajor(from: "5.0.0")),
